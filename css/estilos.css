@@ -1,0 +1,637 @@
+/*****Estilos para el sitio web marte *****/
+:root {
+    --text-color: rgb(0, 0, 0);
+    --text-fondo-oscuro-color: rgb(255, 255, 255);
+    --contrast-color: rgb(189, 55, 0);
+    --bg-dark-color: rgb(0,0,0);
+    --bg-white-color: rgb(255,255,255);
+    --bg-light-color: rgba(0,0,0,0.1);
+    --font-menu: 'Open Sans', sans-serif;
+    --font-serif: 'Alegreya', serif;
+    --font-sans-serif: 'Open Sans', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0 auto;
+    font-family: var(--font-sans-serif);
+    background-color: var(--bg-dark-color);
+    overflow-x: hidden;
+}
+
+header {
+    margin-top: -16px;
+    background-color: var(--bg-white-color);
+    text-align: center;
+}
+
+header figure {
+    margin: 1rem 0;
+}
+
+header nav ul li {
+    padding-bottom: 0.3rem;
+}
+
+header nav ul li:last-child {
+    margin-bottom: 1.5rem;
+}
+
+header nav ul li a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-family: var(--font-menu);
+    font-weight: bold;
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+}
+
+header nav  ul li a:hover {
+    color: var(--contrast-color);
+}
+
+header nav  ul li a.active {
+    border-bottom: 3px solid var(--text-color);
+}
+
+main {
+    background-color: var(--bg-white-color);
+    clear:both;
+}
+
+footer {
+    background-color: var(--bg-dark-color);
+    text-align: center;
+    color: var(--text-fondo-oscuro-color);
+    padding-top: 2rem;
+}
+
+footer .link-email {
+    color: var(--text-fondo-oscuro-color);
+    text-decoration: none;
+    font-family: var(--font-menu);
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+}
+
+footer .link-email:hover {
+    color: var(--contrast-color);
+}
+
+footer div a {
+    color: var(--text-fondo-oscuro-color);
+    text-decoration: none;
+}
+
+footer div a:hover {
+    color: var(--contrast-color);
+}
+
+footer form {
+    clear: both;
+    margin: 3rem 0;
+}
+
+footer legend {
+    font-size: 1.5rem;
+    margin:0 auto 2rem auto;
+}
+
+footer legend span {
+    font-style: italic;
+}
+
+footer fieldset {
+    border: none;
+}
+
+footer label {
+    font-size: 1rem;
+}
+
+footer input[type=email] {
+    background-color: var(--bg-dark-color);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    width: 90%;
+    color:var(--text-fondo-oscuro-color);
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+footer input[type=submit] {
+   text-transform: uppercase;
+    padding: .6rem;
+    margin-top: 2rem;
+    margin-bottom: 0;
+}
+
+footer nav  {
+    max-width: 100%;
+    margin-left: 2%;
+    margin-right: 2%;
+    min-height: 2rem;
+}
+
+footer nav {
+    width: 100%;
+}
+
+footer nav ul li {
+    list-style: none;
+    float: left;
+    padding:0 0.2rem;
+}
+
+footer nav ul li a {
+    color: var(--text-fondo-oscuro-color);
+    text-decoration: none;
+    font-family: var(--font-menu);
+    font-size: 0.9rem;
+}
+
+footer nav  ul li a:hover {
+    color: var(--contrast-color);
+}
+
+footer .copyright {
+    margin-top: 2rem;
+}
+
+footer .copyright p {
+    margin:1rem 0;
+    font-size: 0.65rem;
+}
+
+footer .copyright p:last-child {
+    padding-bottom: 4rem;
+}
+
+section {
+    font-family: var(--font-serif);
+}
+
+/**
+        START INDEX
+ */
+
+.index section:first-child {
+    background-color: var(--bg-dark-color);
+    background-image: url("../img/bg-hero-mars.jpg");
+    background-position: bottom right;
+    background-size: 200px;
+    background-repeat: no-repeat;
+    color: var(--text-fondo-oscuro-color);
+    min-height: 275px;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.index section:first-child h1 {
+    padding-top: 1.5rem;
+    padding-bottom: 0.3rem;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.index section:first-child h2 {
+    font-weight: normal;
+    font-size: 1.5rem;
+    padding-top: 1.5rem;
+}
+
+.index section + section {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 3rem;
+}
+
+.index section + section h3 {
+    font-weight: bold;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    font-size: 1.7rem;
+}
+
+.index section + section h4 {
+    font-weight: lighter;
+    padding-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.index section + section h5 {
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding-bottom: 1rem;
+}
+
+.index section + section .grid {
+    max-width: 100%;
+    margin: 0 auto;
+    display: grid;
+}
+
+.index section + section .grid .item p {
+    padding-bottom: 2rem;
+    line-height: 1.5rem;
+}
+
+.index section + section .grid .item figure img {
+    width: 100%;
+}
+
+.index section + section .grid .item h5 {
+    color: #d1561a;
+}
+
+.index section + section .grid a {
+    color: #d1561a;
+    text-decoration: none;
+}
+
+.index section + section .grid a:hover {
+    color: var(--contrast-color);
+}
+
+/**
+        FINISH INDEX
+
+        START MARS 2020
+ */
+
+.page-mars-exploration {
+    margin-top: -25px;
+    padding-top: 2.5rem;
+    padding-left: 4%;
+    padding-right: 4%;
+    font-family: var(--font-serif);
+    text-align: left;
+}
+
+.page-mars-exploration article h1 {
+    font-size: 2rem;
+    padding-bottom: 1rem;
+}
+
+.page-mars-exploration article p {
+    padding-bottom: 1rem;
+}
+
+.page-mars-exploration article h2 {
+    font-size: 1.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.page-mars-exploration article ul {
+    list-style-type: square;
+    padding-left: 7%;
+    padding-bottom: 1rem;
+}
+
+.page-mars-exploration figure iframe {
+    width: 100%;
+    max-width: 560px;
+    border: 0;
+}
+
+.page-mars-exploration figure figcaption {
+    text-align: center;
+    font-size: 0.7rem;
+}
+
+.page-mars-exploration .container-nav {
+    font-family: var(--font-sans-serif);
+}
+
+.page-mars-exploration .container-nav h3 {
+    font-size: 0.7rem;
+    font-weight: normal;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+.page-mars-exploration .container-nav ul {
+    list-style-type: none;
+    font-size: 1rem;
+    padding-bottom: 3rem;
+}
+
+.page-mars-exploration .container-nav ul li {
+    padding-bottom: 0.5rem;
+}
+
+.page-mars-exploration .container-nav ul li.active {
+   font-weight: bold;
+}
+
+.page-mars-exploration .container-nav ul li a {
+    color: #d1561a;
+    text-decoration: none;
+}
+
+.page-mars-exploration .container-nav ul li a:hover {
+    color: var(--contrast-color);
+}
+
+/**
+        FINISH MARS 2020
+
+        START CIENCIA FICCION
+*/
+
+.ciencia-ficcion {
+    margin-top: -25px;
+    padding-top: 2.5rem;
+    padding-left: 4%;
+    padding-right: 4%;
+    font-family: var(--font-serif);
+    text-align: left;
+}
+
+.ciencia-ficcion h1 {
+    font-size: 2.3rem;
+}
+
+.ciencia-ficcion .grid {
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+}
+
+.ciencia-ficcion .grid div {
+    background-color: var(--bg-light-color);
+}
+
+.ciencia-ficcion .grid figure img {
+    max-width: 100%;
+}
+
+.ciencia-ficcion .grid figure img {
+    max-width: 100%;
+}
+
+.ciencia-ficcion .grid .item1-title, .item2-title, .item3-title, .item4-title, .item5-title, .item6-title {
+    font-size: 2.3rem;
+    font-weight: bold;
+    line-height: 2.5rem;
+    padding: 1rem;
+}
+
+.ciencia-ficcion .grid .item1-description, .item2-description, .item3-description, .item4-description, .item5-description, .item6-description {
+    padding: 1rem;
+}
+
+.ciencia-ficcion .grid .item1-img, .item2-img, .item3-img, .item4-img, .item5-img, .item6-img {
+    margin-bottom: 1rem;
+}
+
+.ciencia-ficcion .grid .author {
+    padding-top: 1rem;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.ciencia-ficcion .grid .bg:before {
+    content: "\25AC";
+    color: #d1561a;
+    position: relative;
+    top: 3px;
+}
+
+.marte-cine {
+    margin-top: -25px;
+    font-family: var(--font-serif);
+    padding-left: 4%;
+    padding-right: 4%;
+}
+
+.marte-cine h1 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.marte-cine iframe {
+    width: 100%;
+    border: 0;
+}
+
+.marte-cine figcaption {
+    background-color: var(--bg-light-color);
+    text-align: center;
+    padding-top: 0.5rem;
+    padding-bottom: 1rem;
+    font-size: 1.2rem;
+    margin-top: -5px;
+}
+
+.marte-cine figcaption span:first-child {
+    font-weight: bold;
+}
+
+.marte-cine .grid {
+    padding-bottom: 3rem;
+}
+
+.marte-cine .grid div {
+    margin-bottom: 1rem;
+}
+
+/**
+        FINISH CIENCIA FICCION
+*/
+
+/* tablet */
+@media (min-width: 768px) {
+    header {
+        width: 100%;
+        min-height: 160px;
+        padding-left: 8%;
+        padding-right: 8%;
+        text-align: left;
+    }
+
+    header nav ul li {
+        list-style: none;
+        float: left;
+        padding-right: 1.5rem;
+    }
+
+    header nav ul li a {
+        font-size: 1.2rem;
+    }
+
+    footer .copyright p {
+        margin:1rem 0;
+        font-size: 0.9rem;
+    }
+
+    footer nav {
+        width: 100%;
+        margin-left: calc(50% - 175px);
+    }
+
+    .index section:first-child {
+        background-size: 250px;
+        background-position: 80% 35%;
+        width: 100%;
+        padding-left: 8%;
+        padding-right: 8%;
+    }
+
+    .index section:first-child h1 {
+        font-size: 3rem;
+    }
+
+    .index section + section {
+        width: 85%;
+    }
+
+
+    .index section + section h3 {
+        font-size: 2.3rem;
+    }
+
+    .index section + section h4 {
+        font-size: 1.7rem;
+    }
+
+    .index section + section .grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .index section + section .grid .item:nth-child(odd) {
+        background-color: var(--bg-light-color);
+    }
+
+    .index section + section .grid .item h5 {
+        padding-left: 1rem;
+        padding-right: 1rem;
+        font-size: 2rem;
+    }
+
+    .index section + section .grid .item p {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .index section:first-child h1 {
+        font-size: 4rem;
+    }
+
+    .index section:first-child h2 {
+        font-size: 2rem;
+    }
+
+    .page-mars-exploration .grid {
+        display: grid;
+        grid-template-columns: auto auto;
+        padding-left: 4.4%;
+        padding-right: 5%;
+        padding-bottom: 2rem;
+        margin-top: -25px;
+    }
+
+    .page-mars-exploration .grid .container-article {
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    .page-mars-exploration .grid .container-nav {
+        grid-column: 1;
+        grid-row: 1;
+        padding-right: 2rem;
+    }
+
+    .page-mars-exploration, figure iframe {
+        width: 560px;
+        height: 315px;
+        border: 0;
+        margin: 0 auto;
+        display:block;
+    }
+
+    .page-mars-exploration article ul {
+        padding-left: 2%;
+    }
+
+    .ciencia-ficcion, .marte-cine {
+        padding-left: 8%;
+        padding-right: 8%;
+        padding-top: 0;
+    }
+
+    .ciencia-ficcion .grid {
+        display: grid;
+        grid-template-columns: 25% 50% 25%;
+        grid-gap: 1rem;
+    }
+
+    .ciencia-ficcion .grid .item1-title, .item2-title, .item3-title, .item4-title, .item5-title, .item6-title {
+        font-size: 2.8rem;
+        line-height: 3.5rem;
+    }
+
+    .ciencia-ficcion .grid .item1-img, .item2-img, .item3-img, .item4-img, .item5-img, .item6-img {
+        margin-bottom: 0;
+    }
+
+    .ciencia-ficcion .grid .author {
+        font-size: 1.3rem;
+    }
+
+    .marte-cine .grid {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-gap: 1rem;
+    }
+
+    .marte-cine {
+        position: relative;
+        top: -20px;
+    }
+
+    .marte-cine h1 {
+        font-size: 2.3rem;
+    }
+}
+
+/* tablet ipad pro */
+@media (min-width: 1024px) {
+
+    header nav ul li a {
+        font-size: 1.3rem;
+    }
+
+    footer .copyright p {
+        margin:1rem 0;
+        font-size: 1rem;
+    }
+
+    footer input[type=email] {
+        width: 30%;
+        font-size: 1rem;
+    }
+
+    .index section:first-child {
+        background-size: 280px;
+    }
+
+    .index section:first-child h1 {
+        font-size: 5rem;
+    }
+
+    .index section:first-child h2 {
+        font-size: 2.5rem;
+    }
+
+    .ciencia-ficcion .grid .item1-title, .item2-title, .item3-title, .item4-title, .item5-title, .item6-title {
+        font-size: 3.2rem;
+    }
+}
