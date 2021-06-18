@@ -176,6 +176,10 @@ section {
     font-family: var(--font-serif);
 }
 
+abbr {
+    text-decoration: none;
+}
+
 /**
         START INDEX
  */
@@ -529,11 +533,13 @@ section {
         font-size: 2rem;
     }
 
+    .page-mars-exploration {
+        min-width: 90%;
+    }
+
     .page-mars-exploration .grid {
         display: grid;
         grid-template-columns: auto auto;
-        padding-left: 4.4%;
-        padding-right: 5%;
         padding-bottom: 2rem;
         margin-top: -25px;
     }
@@ -549,7 +555,7 @@ section {
         padding-right: 2rem;
     }
 
-    .page-mars-exploration, figure iframe {
+    .page-mars-exploration figure iframe {
         width: 560px;
         height: 315px;
         border: 0;
@@ -561,10 +567,19 @@ section {
         padding-left: 2%;
     }
 
-    .ciencia-ficcion, .marte-cine {
+    .ciencia-ficcion, .marte-cine, .page-mars-exploration {
         padding-left: 8%;
         padding-right: 8%;
         padding-top: 0;
+    }
+
+    .page-mars-exploration article {
+        text-align: justify;
+        padding-right: 8%;
+    }
+
+    .page-mars-exploration article iframe {
+        min-width: 100%;
     }
 
     .ciencia-ficcion .grid {
