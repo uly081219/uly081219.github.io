@@ -33,6 +33,10 @@ header figure {
     margin: 1rem 0;
 }
 
+header nav ul {
+    list-style-type: none;
+}
+
 header nav ul li {
     padding-bottom: 0.3rem;
 }
